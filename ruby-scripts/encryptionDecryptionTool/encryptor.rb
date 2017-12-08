@@ -1,5 +1,5 @@
 class Encryptor
-	def cipher(rotation) #this is our reference for encryption
+	def cipher(rotation) 
 
 		characters = (' '..'z').to_a
 		rotatedCharacters = characters.rotate(rotation)
