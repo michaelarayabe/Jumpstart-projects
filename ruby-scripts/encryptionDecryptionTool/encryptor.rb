@@ -57,6 +57,15 @@ class Encryptor
 		output.close
 	end
 
+	def crack(message)
+		(' '..'z').to_a.count.times.map do |attempt|
+			decrypt(message, attempt)
+			
+		end
+
+
+	end
+
 end
 
 
